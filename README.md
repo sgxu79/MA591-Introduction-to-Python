@@ -1,1 +1,1 @@
-# MA_591_FA2019
+# MA 591 Materials
