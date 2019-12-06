@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 14 00:39:10 2019
-
-@author: 15306
-"""
-
-from math import pi
-=======
 # -*- coding: utf-8 -*-
 """
 Created on Thu Nov 14 15:17:35 2019
@@ -58,4 +48,4 @@ np.abs(pi - approx_pi(1e5))
 Approximation with 1e6
 """
 np.abs(pi - approx_pi(1e6))
->>>>>>> 5e9330399ac2067d03b20d2634316aee265f9196
+
