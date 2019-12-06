@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec  6 02:25:54 2019
@@ -25,21 +26,21 @@ class Quadratic:
         """
         return self.a * x ** 2 + self.b * x + self.c
         
-    def plot(self, L, U, n):
+    def plot(self, L, R, n):
         """
-        Plot the quadratic function values in the interval [L, R] at 
+        Plot the quadratic function in the interval [L, R] at 
         n evenly spaced points.
         """
-        x = np.linspace(L, U, n)
+        x = np.linspace(L, R, n)
         y = self.value(x)
         plt.plot(x, y)
         plt.xlabel("x")
         plt.ylabel("y")
-        plt.title("Quadratic Function with a={}, b={}".format(self.a, self.b))
+        plt.title("Quadratic Function with a={}, b={}, c={}".format(self.a, self.b, self.c))
     
     def roots(self):
         """
-        Output the roots of the quadratic function, imaginary values can be incorporated
+        Return roots of the quadratic function
         """
         delta = self.b ** 2 - 4 * self.a * self.c
         return ((-self.b - delta ** 0.5) / (2 * self.a), (-self.b + delta ** 0.5) / (2 * self.a))
